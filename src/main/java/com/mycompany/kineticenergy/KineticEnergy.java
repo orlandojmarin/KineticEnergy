@@ -16,7 +16,7 @@ public class KineticEnergy {
         // variables
         double objectMass;  // Mass of the object that the user input
         double objectVelocity;  // Velocity of the object that the user input
-        double KE;          // Kinetic Energy based on the user's inputs for Mass and Velocity
+        double objectKineticEnergy;          // Kinetic Energy based on the user's inputs for Mass and Velocity
 
         // define keyboard object
         Scanner keyboard = new Scanner(System.in);
@@ -33,8 +33,8 @@ public class KineticEnergy {
         velocity that the user input and print the value of Kinetic energy, 
         measured in Joules (kgm^2 / s^2)
         */
-        KE = kineticEnergy(objectMass, objectVelocity);
-        System.out.printf("The Kinetic Energy of Orlando Marin's object is %,.2f Joules!\n", KE);
+        objectKineticEnergy = kineticEnergy(objectMass, objectVelocity);
+        System.out.printf("The Kinetic Energy of Orlando Marin's object is %,.2f Joules!\n", objectKineticEnergy);
     }
     
     /* create kineticEnergy method that accepts an object's mass in kilograms
